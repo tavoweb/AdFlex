@@ -1,0 +1,58 @@
+<section id="install-section" class="doc-section">
+    <h2 class="section-title">Install</h2>
+    <div class="section-block">
+        <p>
+            I tried to make the installation of the application as simple as possible. <br><br>
+
+            1. Extract the contents of the archive into the root directory of the site <br>
+            2. Set the rights to the file <strong>CONFIG.INI</strong> (666 or 777) <br>
+            3. Set permissions on the <strong>IMAGES</strong> folder (777) <br>
+            4. Go to http://yoursite.com <br>
+
+        <div class="callout-block callout-info">
+            Hereinafter, <strong>yoursite.com</strong> means your domain
+        </div>
+
+
+        Fill in the form:<br><br>
+
+        <strong>MySQL User</strong> - MySQL user name (check with your hosting provider)<br>
+        <strong>MySQL Password</strong> - MySQL user password (check with your hosting provider)<br>
+        <strong>MySQL Host</strong> - the address of the MySQL server (in most cases this is “localhost”)<br>
+        <strong>MySQL DB name</strong> - is the name of the MySQL database, the installer will try to create a database
+        with this name.<br><br>
+
+
+        <div class="callout-block callout-info">
+            Note that on some hosting sites this may not work. You may need to create the database yourself in the
+            server /
+            hosting management panel.
+        </div>
+
+        If you created a database in the hosting control panel, just add its name in the field <strong>“MySQL DB
+        name”</strong><br>
+
+        <strong>Admin Email</strong> - Email administrator. Your email to enter the control panel.<br>
+        <strong>Admin Password</strong> - Create a password to enter the control panel. The password is at least 8
+        characters long.<br>
+
+        Press the <strong>“INSTALL”</strong> button. This completes the installation.
+        </p>
+
+        <div class="callout-block callout-danger">
+            <strong>Attention!</strong><br>
+
+            You cannot install a script in a subfolder (this is a limitation of the codeigniter framework). Use a subdomain instead of a subfolder.<br><br>
+
+            Wrong: <strong>site.com/subfolder/</strong><br>
+            Right: <strong>subdomain.site.com</strong><br><br>
+
+            Do not use the combination of the letters <strong>"ad", "ads", "advert"</strong> in the name of the domain or subdomain, so as not to fall under AdBlock filters
+        </div>
+
+
+        <a href="/docs/screenshots/install-1.jpg" class="clearfix" data-toggle="lightbox">
+            <img src="/docs/screenshots/install-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>

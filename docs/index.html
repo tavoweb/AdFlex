@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AdFlex 2 - documentation</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="AdFlex 2 - documentation">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+            integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+</head>
+
+<body class="body-green">
+<div class="page-wrapper">
+    <!-- ******Header****** -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="branding">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                        <span class="text-highlight">ADFLEX 2</span> <span class="text-bold">Docs</span>
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </header>
+    <div class="doc-wrapper">
+        <div class="container">
+
+            <div class="doc-body row">
+                <div class="doc-content col-md-9 col-12 order-1">
+                    <div class="content-inner">
+
+                        <section id="install-section" class="doc-section">
+    <h2 class="section-title">Install</h2>
+    <div class="section-block">
+        <p>
+            I tried to make the installation of the application as simple as possible. <br><br>
+
+            1. Extract the contents of the archive into the root directory of the site <br>
+            2. Set the rights to the file <strong>CONFIG.INI</strong> (666 or 777) <br>
+            3. Set permissions on the <strong>IMAGES</strong> folder (777) <br>
+            4. Go to http://yoursite.com <br>
+
+        <div class="callout-block callout-info">
+            Hereinafter, <strong>yoursite.com</strong> means your domain
+        </div>
+
+
+        Fill in the form:<br><br>
+
+        <strong>MySQL User</strong> - MySQL user name (check with your hosting provider)<br>
+        <strong>MySQL Password</strong> - MySQL user password (check with your hosting provider)<br>
+        <strong>MySQL Host</strong> - the address of the MySQL server (in most cases this is “localhost”)<br>
+        <strong>MySQL DB name</strong> - is the name of the MySQL database, the installer will try to create a database
+        with this name.<br><br>
+
+
+        <div class="callout-block callout-info">
+            Note that on some hosting sites this may not work. You may need to create the database yourself in the
+            server /
+            hosting management panel.
+        </div>
+
+        If you created a database in the hosting control panel, just add its name in the field <strong>“MySQL DB
+        name”</strong><br>
+
+        <strong>Admin Email</strong> - Email administrator. Your email to enter the control panel.<br>
+        <strong>Admin Password</strong> - Create a password to enter the control panel. The password is at least 8
+        characters long.<br>
+
+        Press the <strong>“INSTALL”</strong> button. This completes the installation.
+        </p>
+
+        <div class="callout-block callout-danger">
+            <strong>Attention!</strong><br>
+
+            You cannot install a script in a subfolder (this is a limitation of the codeigniter framework). Use a subdomain instead of a subfolder.<br><br>
+
+            Wrong: <strong>site.com/subfolder/</strong><br>
+            Right: <strong>subdomain.site.com</strong><br><br>
+
+            Do not use the combination of the letters <strong>"ad", "ads", "advert"</strong> in the name of the domain or subdomain, so as not to fall under AdBlock filters
+        </div>
+
+
+        <a href="/docs/screenshots/install-1.jpg" class="clearfix" data-toggle="lightbox">
+            <img src="/docs/screenshots/install-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+                        <section id="admin-user-management" class="doc-section clearfix">
+    <h2 class="section-title">User management</h2>
+    <div class="section-block">
+        <p>
+            The administrator has the ability to add new and edit existing users.
+        </p>
+        <a href="/docs/screenshots/a-users-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/a-users-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="admin-site-management" class="doc-section clearfix">
+    <h2 class="section-title">Site management</h2>
+    <div class="section-block">
+        <p>
+            The administrator has the opportunity to moderate the sites and edit their parameters as well as add new sites.
+        </p>
+        <a href="/docs/screenshots/a-sites-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/a-sites-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="admin-camp-management" class="doc-section clearfix">
+    <h2 class="section-title">Camp management</h2>
+    <div class="section-block">
+        <p>
+            The administrator has the ability to edit user advertising campaigns as well as adding new advertising campaigns.
+        </p>
+        <a href="/docs/screenshots/a-camps-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/a-camps-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <a href="/docs/screenshots/a-camps-2.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/a-camps-2.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+    </div>
+</section>
+
+                        <section id="admin-ad-management" class="doc-section clearfix">
+    <h2 class="section-title">Ad management</h2>
+    <div class="section-block">
+        <p>
+            The administrator has a convenient tool for moderating advertisers' ads.
+        </p>
+        <a href="/docs/screenshots/a-ads-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/a-ads-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="admin-statistics" class="doc-section clearfix">
+    <h2 class="section-title">Statistics</h2>
+    <div class="section-block">
+        <p>
+            The administrator has detailed system statistics.
+        </p>
+        <a href="/docs/screenshots/a-stat-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/a-stat-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="admin-payments" class="doc-section clearfix">
+    <h2 class="section-title">Payments</h2>
+    <div class="section-block">
+        <p>
+            On the payment page you can see all the payments received in the system.
+        </p>
+        <a href="/docs/screenshots/a-payments-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/a-payments-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="admin-payouts" class="doc-section clearfix">
+    <h2 class="section-title">Payouts</h2>
+    <div class="section-block">
+        <p>
+            On the payout page, you pay the earned money to webmasters.
+            For security reasons - payments are made in manual mode.
+        </p>
+        <p>
+            To do this, you need to initiate the start of payment
+        </p>
+
+        <p class="clearfix">
+            <a href="/docs/screenshots/a-payouts-1.jpg" data-toggle="lightbox">
+                <img src="/docs/screenshots/a-payouts-1.jpg" class="img-fluid thumb rounded float-left m-2">
+            </a>
+        </p>
+
+        <p>
+            Then, independently transfer the required amount to the user in his account on PayPal.com
+        </p>
+        <p>
+            After that, depending on whether the transfer was successful or not, complete the withdrawal of funds from the AdFlex system
+        </p>
+
+        <a href="/docs/screenshots/a-payouts-2.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/a-payouts-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="admin-support" class="doc-section clearfix">
+    <h2 class="section-title">Support</h2>
+    <div class="section-block">
+        <p>
+            The administrator has the ability to respond to customer tickets, and open new tickets
+        </p>
+        <a href="/docs/screenshots/a-support-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/a-support-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="admin-settings" class="doc-section clearfix">
+    <h2 class="section-title">Settings</h2>
+    <div class="section-block">
+        <p>
+            In the basic settings, you can specify the interface language, time zone, and the ability to register new users in the system.
+        </p>
+
+        <a href="/docs/screenshots/a-settings-1.jpg" data-toggle="lightbox" class="clearfix">
+            <img src="/docs/screenshots/a-settings-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <br><br>
+        <p>
+            In the payment settings, you must specify a PayPal account to accept payments from advertisers. <br>
+            Account Stripe for accepting payments from advertisers. <br>
+            You can also enable or disable the possibility of replenishment by advertisers. <br>
+        </p>
+
+        <a href="/docs/screenshots/a-settings-2.jpg" data-toggle="lightbox" class="clearfix">
+            <img src="/docs/screenshots/a-settings-2.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <br><br>
+
+        <p>
+            In the payout settings, you can disable the ability to pay webmasters.
+        </p>
+
+        <a href="/docs/screenshots/a-settings-3.jpg" data-toggle="lightbox" class="clearfix">
+            <img src="/docs/screenshots/a-settings-3.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <br><br>
+
+        <p>
+            Setting the commission of the system, what percentage of the cost of a click or impression the system will take.
+            In fact, this is the percentage of system profit.
+        </p>
+
+        <a href="/docs/screenshots/a-settings-4.jpg" data-toggle="lightbox" class="clearfix">
+            <img src="/docs/screenshots/a-settings-4.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <br><br>
+
+        <p>
+            Change admin password
+        </p>
+        <a href="/docs/screenshots/a-settings-5.jpg" data-toggle="lightbox" class="clearfix">
+            <img src="/docs/screenshots/a-settings-5.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+    </div>
+</section>
+
+                        <section id="advertiser-add-camp" class="doc-section clearfix">
+    <h2 class="section-title">Add camp</h2>
+    <div class="section-block">
+        <p>
+            Do you want to advertise a product or service?
+            With AdFlex, this is very easy.
+            Place banners on the sites of the system. Fine-tuning targeting, detailed statistics, anti-click protection
+            - it's all about AdFlex!
+        </p>
+        <p>
+            The first thing you need to do is create an advertising campaign.
+            When creating a campaign, you can very finely target your ad serving.
+            Available settings: Theme, GEO, browser, OS, device type, time, day of the week, there is also
+            a blacklist sites.
+        </p>
+        <a href="/docs/screenshots/adv-camp-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/adv-camp-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="advertiser-add-banner" class="doc-section clearfix">
+    <h2 class="section-title">Add banner</h2>
+    <div class="section-block">
+        <p>
+            After creating an advertising campaign, it's time to add banners.
+            You can specify the desired type of payment. 1000 impressions or per click. You can also specify cost per
+            1000 impressions and per click.
+        </p>
+
+        <p>
+            You can add UTM tags to an advertising link to track conversions.
+        </p>
+
+        <p>
+            After adding - all banners are moderated manually.
+        </p>
+
+        <a href="/docs/screenshots/adv-banner-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/adv-banner-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <a href="/docs/screenshots/adv-banner-2.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/adv-banner-2.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+        <a href="/docs/screenshots/adv-banner-3.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/adv-banner-3.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+    </div>
+</section>
+
+                        <section id="advertiser-payments" class="doc-section clearfix">
+    <h2 class="section-title">Payments</h2>
+    <div class="section-block">
+        <p>
+            To show advertisements you must replenish your balance in the system.
+            You also have information about all payments made.
+        </p>
+        <a href="/docs/screenshots/adv-payments-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/adv-payments-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="advertiser-statistics" class="doc-section clearfix">
+    <h2 class="section-title">Statistics</h2>
+    <div class="section-block">
+        <p>
+            AdFlex Provides detailed statistics for each ad.
+        </p>
+        <a href="/docs/screenshots/adv-statistics-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/adv-statistics-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+
+                        <section id="webmaster-add-site" class="doc-section clearfix">
+    <h2 class="section-title">Add site</h2>
+    <div class="section-block">
+        <p>
+            If you have a website and want to earn money by placing advertising banners on the website, it is very easy
+            to do with AdFlex!
+            To add a site to the system, you need to specify some data of your site. And wait for the moderation of the
+            site.
+        </p>
+        <a href="/docs/screenshots/w-site-1.png" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-site-1.png" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <a href="/docs/screenshots/w-site-2.png" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-site-2.png" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <a href="/docs/screenshots/w-site-3.png" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-site-3.png" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+
+    </div>
+</section>
+
+                        <section id="webmaster-add-unit" class="doc-section clearfix">
+    <h2 class="section-title">Add unit</h2>
+    <div class="section-block">
+        <p>
+            After moderation, it's time to add an ad unit to the site.
+            In this block, banners will be displayed, for their impressions and clicks you will receive a reward.
+        </p>
+        <p>
+            When adding an ad, it needs to be slightly customized. You can specify the desired banner size,
+            payment mode, for clicks or impressions, or for clicks and impressions. Minimum cost per impression or
+            click.
+        </p>
+        <p>
+            After saving the block, you need to add the ad block call code to your website.
+        </p>
+        <a href="/docs/screenshots/w-units-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-units-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+        <a href="/docs/screenshots/w-units-2.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-units-2.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+        <a href="/docs/screenshots/w-units-3.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-units-3.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+        <a href="/docs/screenshots/w-units-4.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-units-4.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+
+    </div>
+</section>
+
+                        <section id="webmaster-payouts" class="doc-section clearfix">
+    <h2 class="section-title">Payouts</h2>
+    <div class="section-block">
+        <p>
+            After you earn a certain amount of money, you can order a payment to your *PayPal account.
+            All payments are made in manual mode. You will have to wait a little while the administrator will make
+            payout.
+        </p>
+
+        <div class="callout-block callout-success">
+            <p>
+                * To receive payments, you must specify your PayPal account in the system settings.
+            </p>
+            <p>
+                ** Note that accepting payments to a PayPal account is not possible in all countries.
+            </p>
+        </div>
+
+
+        <a href="/docs/screenshots/w-payouts-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-payouts-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <a href="/docs/screenshots/w-payouts-2.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-payouts-2.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <a href="/docs/screenshots/w-payouts-3.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-payouts-3.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+
+    </div>
+</section>
+
+                        <section id="webmaster-statistics" class="doc-section clearfix">
+    <h2 class="section-title">Statistics</h2>
+    <div class="section-block">
+        <p>
+            In the statistics section, you can track information about impressions and clicks.
+            You can also see the earned amount for the site or block.
+        </p>
+        <a href="/docs/screenshots/w-statistics.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-statistics.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="webmaster-support" class="doc-section clearfix">
+    <h2 class="section-title">Support</h2>
+    <div class="section-block">
+        <p>
+            If you have any problems or questions, you can write in support and get help.
+        </p>
+        <a href="/docs/screenshots/w-support-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-support-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <a href="/docs/screenshots/w-support-2.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-support-2.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+    </div>
+</section>
+
+                        <section id="webmaster-settings" class="doc-section clearfix">
+    <h2 class="section-title">Settings</h2>
+    <div class="section-block">
+        <p>
+            In the settings, you can change the interface language, time zone, password.
+            You must also specify your PayPal account, otherwise you will not be able to receive payments
+        </p>
+        <a href="/docs/screenshots/w-settings-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/w-settings-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+
+                        <section id="moderator-sites" class="doc-section clearfix">
+    <h2 class="section-title">Moderation Sites</h2>
+    <div class="section-block">
+        <p>
+            The moderator has the ability to conduct moderation of sites and editing their parameters.
+        </p>
+        <a href="/docs/screenshots/m-sites-1.png" data-toggle="lightbox">
+            <img src="/docs/screenshots/m-sites-1.png" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <a href="/docs/screenshots/m-sites-2.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/m-sites-2.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="moderator-camps" class="doc-section clearfix">
+    <h2 class="section-title">Camps management</h2>
+    <div class="section-block">
+        <p>
+            The moderator has the ability to edit user advertising campaigns.
+        </p>
+        <a href="/docs/screenshots/m-camps-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/m-camps-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <a href="/docs/screenshots/m-camps-2.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/m-camps-2.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="moderator-ads" class="doc-section clearfix">
+    <h2 class="section-title">Moderation Ads</h2>
+    <div class="section-block">
+        <p>
+            One of the main tasks of the moderator is to check announcements. The moderator has a convenient tool for checking advertisers' announcements.
+        </p>
+        <a href="/docs/screenshots/m-ads-1.png" data-toggle="lightbox">
+            <img src="/docs/screenshots/m-ads-1.png" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <a href="/docs/screenshots/m-ads-2.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/m-ads-2.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+    </div>
+</section>
+
+                        <section id="moderator-support" class="doc-section clearfix">
+    <h2 class="section-title">Support</h2>
+    <div class="section-block">
+        <p>
+            The moderator has the ability to respond to customer tickets.
+        </p>
+
+        <a href="/docs/screenshots/m-support-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/m-support-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+                        <section id="moderator-settings" class="doc-section clearfix">
+    <h2 class="section-title">Settings</h2>
+    <div class="section-block">
+        <p>
+            In the settings, you can change the interface language, time zone, password.
+        </p>
+        <a href="/docs/screenshots/m-settings-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/m-settings-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+    </div>
+</section>
+
+
+
+                        <section id="faq-isolated" class="doc-section clearfix">
+    <h2 class="section-title">Isolated mode</h2>
+    <div class="section-block">
+        <p>
+            If you have YOUR websites, and you want to place YOUR banners on them, AdFlex has special functionality for this.
+        </p>
+
+        <p>
+            1. Log in to the administrator account<br>
+            2. Go to the webmaster subacount<br>
+            3. Add a site, when adding a site, select an "isolated" site<br>
+            4. Create an ad unit<br>
+            5 Place the ad unit code on the site<br>
+        </p>
+
+        <a href="/docs/screenshots/faq-1.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/faq-1.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+        <a class="clearfix" href="/docs/screenshots/faq-2.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/faq-2.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <br>
+
+        <div class="callout-block callout-info">
+            <b>Important!</b><br>
+            You must mark the site as <b>"isolated"</b>
+        </div>
+
+        <p>
+            6. Switch to the advertiser's subaccount <br>
+            7. Add an advertising boil, mark it as <b>"isolated"</b> <br>
+            8. Add banners to the ad campaign <br>
+        </p>
+
+        <a href="/docs/screenshots/faq-3.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/faq-3.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+        <a class="clearfix" href="/docs/screenshots/faq-4.jpg" data-toggle="lightbox">
+            <img src="/docs/screenshots/faq-4.jpg" class="img-fluid thumb rounded float-left m-2">
+        </a>
+
+        <br>
+
+        <div class="callout-block callout-info">
+            <b>Important!</b><br>
+            You must mark the ad campaign as <b>"isolated"</b>
+        </div>
+
+        <p>
+            Why mark sites and campaigns as "isolated"?
+            Isolated mode - allows you to display <b> YOUR OWN </b> advertising campaigns on <b> YOUR OWN </b> sites.
+            At the same time, money for clicks and impressions is not deducted.
+            This mode is necessary so that you do not pay for clicks and impressions to yourself.
+        </p>
+
+        <div class="callout-block callout-danger font-weight-bold">
+            Remember! <br>
+            On isolated sites, the ads of ONLY isolated campaigns will be shown. <br>
+            The reverse is also true: Ads of isolated campaigns - will be shown only on isolated sites. <br>
+            On isolated sites and campaigns, money is NOT debited.
+        </div>
+
+    </div>
+</section>
+
+
+                    </div>
+                </div>
+
+                <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                    <div id="doc-nav" class="doc-nav">
+                        <nav id="doc-menu" class="nav doc-menu flex-column sticky" style="min-height: 1000px;">
+                            <a class="nav-link scrollto" href="#install-section">Install</a>
+
+                            <a class="nav-link scrollto" href="#admin-user-management">Administarator</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#admin-user-management">User management</a>
+                                <a class="nav-link scrollto" href="#admin-site-management">Site management</a>
+                                <a class="nav-link scrollto" href="#admin-camp-management">Camp management</a>
+                                <a class="nav-link scrollto" href="#admin-ad-management">Ad management</a>
+                                <a class="nav-link scrollto" href="#admin-statistics">Statistics</a>
+                                <a class="nav-link scrollto" href="#admin-payments">Payments</a>
+                                <a class="nav-link scrollto" href="#admin-payouts">Payouts</a>
+                                <a class="nav-link scrollto" href="#admin-support">Support</a>
+                                <a class="nav-link scrollto" href="#admin-settings">Settings</a>
+                            </nav>
+
+                            <a class="nav-link scrollto" href="#advertiser-add-camp">Advertiser</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#advertiser-add-camp">Add campaign</a>
+                                <a class="nav-link scrollto" href="#advertiser-add-banner">Add banner</a>
+                                <a class="nav-link scrollto" href="#advertiser-payments">Payments</a>
+                                <a class="nav-link scrollto" href="#advertiser-statistics">Statistics</a>
+                            </nav>
+
+                            <a class="nav-link scrollto" href="#webmaster-add-site">Webmaster</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#webmaster-add-site">Add site</a>
+                                <a class="nav-link scrollto" href="#webmaster-add-unit">Add ad unit</a>
+                                <a class="nav-link scrollto" href="#webmaster-payouts">Payouts</a>
+                                <a class="nav-link scrollto" href="#webmaster-statistics">Statistics</a>
+                                <a class="nav-link scrollto" href="#webmaster-support">Support</a>
+                                <a class="nav-link scrollto" href="#webmaster-settings">Settings</a>
+                            </nav>
+
+                            <a class="nav-link scrollto" href="#moderator-sites">Moderator</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#moderator-sites">Moderation sites</a>
+                                <a class="nav-link scrollto" href="#moderator-camps">Campaigns management</a>
+                                <a class="nav-link scrollto" href="#moderator-ads">Moderation ads</a>
+                                <a class="nav-link scrollto" href="#moderator-support">Support</a>
+                                <a class="nav-link scrollto" href="#moderator-settings">Settings</a>
+                            </nav>
+
+                            <a class="nav-link scrollto" href="#faq-isolated">FAQ</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#faq-isolated">Isolated mode</a>
+                            </nav>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer" class="footer text-center">
+    <div class="container">
+        <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
+                href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers
+        </small>
+    </div>
+</footer>
+
+<script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+
+
+
+    });
+
+
+</script>
+
+
+</body>
+</html> 
+

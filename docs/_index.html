@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AdFlex 2 - documentation</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="AdFlex 2 - documentation">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+            integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+</head>
+
+<body class="body-green">
+<div class="page-wrapper">
+    <!-- ******Header****** -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="branding">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                        <span class="text-highlight">ADFLEX 2</span> <span class="text-bold">Docs</span>
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </header>
+    <div class="doc-wrapper">
+        <div class="container">
+
+            <div class="doc-body row">
+                <div class="doc-content col-md-9 col-12 order-1">
+                    <div class="content-inner">
+
+                        @@include('./pages/install.html')
+                        @@include('./pages/administrator/user-management.html')
+                        @@include('./pages/administrator/site-management.html')
+                        @@include('./pages/administrator/camp-management.html')
+                        @@include('./pages/administrator/ad-management.html')
+                        @@include('./pages/administrator/statistics.html')
+                        @@include('./pages/administrator/payments.html')
+                        @@include('./pages/administrator/payouts.html')
+                        @@include('./pages/administrator/support.html')
+                        @@include('./pages/administrator/settings.html')
+
+                        @@include('./pages/advertiser/add-camp.html')
+                        @@include('./pages/advertiser/add-banner.html')
+                        @@include('./pages/advertiser/payments.html')
+                        @@include('./pages/advertiser/statistics.html')
+
+                        @@include('./pages/webmaster/add-site.html')
+                        @@include('./pages/webmaster/add-unit.html')
+                        @@include('./pages/webmaster/payouts.html')
+                        @@include('./pages/webmaster/statistics.html')
+                        @@include('./pages/webmaster/support.html')
+                        @@include('./pages/webmaster/settings.html')
+
+                        @@include('./pages/moderator/sites.html')
+                        @@include('./pages/moderator/camps.html')
+                        @@include('./pages/moderator/ads.html')
+                        @@include('./pages/moderator/support.html')
+                        @@include('./pages/moderator/settings.html')
+
+                        @@include('./pages/faq/isolated.html')
+
+                    </div>
+                </div>
+
+                <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                    <div id="doc-nav" class="doc-nav">
+                        <nav id="doc-menu" class="nav doc-menu flex-column sticky" style="min-height: 1000px;">
+                            <a class="nav-link scrollto" href="#install-section">Install</a>
+
+                            <a class="nav-link scrollto" href="#admin-user-management">Administarator</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#admin-user-management">User management</a>
+                                <a class="nav-link scrollto" href="#admin-site-management">Site management</a>
+                                <a class="nav-link scrollto" href="#admin-camp-management">Camp management</a>
+                                <a class="nav-link scrollto" href="#admin-ad-management">Ad management</a>
+                                <a class="nav-link scrollto" href="#admin-statistics">Statistics</a>
+                                <a class="nav-link scrollto" href="#admin-payments">Payments</a>
+                                <a class="nav-link scrollto" href="#admin-payouts">Payouts</a>
+                                <a class="nav-link scrollto" href="#admin-support">Support</a>
+                                <a class="nav-link scrollto" href="#admin-settings">Settings</a>
+                            </nav>
+
+                            <a class="nav-link scrollto" href="#advertiser-add-camp">Advertiser</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#advertiser-add-camp">Add campaign</a>
+                                <a class="nav-link scrollto" href="#advertiser-add-banner">Add banner</a>
+                                <a class="nav-link scrollto" href="#advertiser-payments">Payments</a>
+                                <a class="nav-link scrollto" href="#advertiser-statistics">Statistics</a>
+                            </nav>
+
+                            <a class="nav-link scrollto" href="#webmaster-add-site">Webmaster</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#webmaster-add-site">Add site</a>
+                                <a class="nav-link scrollto" href="#webmaster-add-unit">Add ad unit</a>
+                                <a class="nav-link scrollto" href="#webmaster-payouts">Payouts</a>
+                                <a class="nav-link scrollto" href="#webmaster-statistics">Statistics</a>
+                                <a class="nav-link scrollto" href="#webmaster-support">Support</a>
+                                <a class="nav-link scrollto" href="#webmaster-settings">Settings</a>
+                            </nav>
+
+                            <a class="nav-link scrollto" href="#moderator-sites">Moderator</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#moderator-sites">Moderation sites</a>
+                                <a class="nav-link scrollto" href="#moderator-camps">Campaigns management</a>
+                                <a class="nav-link scrollto" href="#moderator-ads">Moderation ads</a>
+                                <a class="nav-link scrollto" href="#moderator-support">Support</a>
+                                <a class="nav-link scrollto" href="#moderator-settings">Settings</a>
+                            </nav>
+
+                            <a class="nav-link scrollto" href="#faq-isolated">FAQ</a>
+                            <nav class="doc-sub-menu nav flex-column">
+                                <a class="nav-link scrollto" href="#faq-isolated">Isolated mode</a>
+                            </nav>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer" class="footer text-center">
+    <div class="container">
+        <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
+                href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers
+        </small>
+    </div>
+</footer>
+
+<script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+
+
+
+    });
+
+
+</script>
+
+
+</body>
+</html> 
+
